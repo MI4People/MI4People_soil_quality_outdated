@@ -1,5 +1,6 @@
 # Soil Quality Evaluation System
-This repo is the work in progress on MI4people's Soil Quality Evaluation System. The focus of this repo is data gathering and model building. For the actual Application (MVP stage), see repo https://github.com/PaulSpringerMI4People/MI4People_Soil_Quality_Streamlit and the app itself https://share.streamlit.io/paulspringermi4people/mi4people_soil_quality_streamlit/app.py
+This repo is the work in progress on MI4people's Soil Quality Evaluation System. The focus of this repo is data gathering and model building. For the actual Application (MVP stage), see repo https://github.com/PaulSpringerMI4People/MI4People_Soil_Quality_Streamlit and the app itself https://share.streamlit.io/paulspringermi4people/mi4people_soil_quality_streamlit/app.py.
+Currently the system is able to predict content of organic carbon in the soil in Africa (depending on location and depth of interest)
 
 ## Data Gathering
 The Scripts that are used to collect required data are:
