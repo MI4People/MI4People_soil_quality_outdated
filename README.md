@@ -7,7 +7,7 @@ Currently the system is able to predict content of organic carbon in the soil in
 The Scripts that are used to collect required data are:
  - Soil_Data_Preparation_v0.2.R: Deals with target data (variables to be predicted) and input data from OpenLandMap.org API. These input data is data such as temperature, vegetation indexes, terrain structure etc. I.e. this is data that was derived from satelite raw data. Thereby various satellite sources were used. Note that this data is tabular, i.e., per location of interest and input variable there is only one value
  - Download_Sentinel_2_Pixels.ipynb: Deals with gathering of input data from Sentinel-2 satellite. This is raw data. It includes all 13 spectral bands of Sentinel-2 (incl. visual RGB bands). Here we also gather only tabular data
- - Download_Sentinel_2_RGB_images.ipynb: Basically the same as Download_Sentinel_2_Pixels.ipynb but deals with only RGB bands an download actual images (4.5km by 4.5 km rectangles with coordinates of location of interes in the center)
+ - Download_Sentinel_2_RGB_images.ipynb: Basically the same as Download_Sentinel_2_Pixels.ipynb but deals with only RGB bands an download actual images (4.5km by 4.5 km rectangles with coordinates of location of interes in the center, resolution is 20m)
 
 For input files required by this scripts and output files produced by them, take a look at the scripts. Scripts are documented/commented in detail.
 
