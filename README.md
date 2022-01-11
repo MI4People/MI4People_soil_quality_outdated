@@ -13,7 +13,7 @@ For input files required by this scripts and output files produced by them, take
 
 ## Building models
 Currently, two approaches to build a model are covered in this repo:
-1. Approach similar to the one in reference paper: https://www.nature.com/articles/s41598-021-85639-y. I.e., only tabular data are used to produce predictions. Creation and evaluation of this model is covered in the script As in Paper v1.1.ipynb
+1. Approach similar to the one in the reference paper: https://www.nature.com/articles/s41598-021-85639-y. I.e., only tabular data are used to produce predictions. Creation and evaluation of this model is covered in the script As in Paper v1.1.ipynb
 2. The second approach is to use actual RGB Sentinel-2 images in addition to tabular data. This a approach and evaluation of the model are covered in Combined Input Source v1.1.ipynb.
 
 For input files required by this scripts and output files produced by them, take a look at the scripts. They are documented/commented in detail.
