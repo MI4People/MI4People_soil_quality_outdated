@@ -7,9 +7,10 @@ library(ggplot2)
 library(ggmap)
 
 
+
 # Loading preprocessed worldwide data from by Hengl et al.
 # https://gitlab.com/openlandmap/compiled-ess-point-data-sets/-/tree/master
-target_worldwide <- readRDS("~/Documents/Projects/MI4People/Code/sol_chem.pnts_horizons.rds")
+target_worldwide <- readRDS("sol_chem.pnts_horizons.rds")
 
 # Get dimension of the table
 dim(target_worldwide)
@@ -75,13 +76,9 @@ cat("Number of unique locations for pH-value:",
 
 # We focus on data for pH-Value, organic carbon and total nitrogen. So,
 # we keep only those data samples where these measurements are available
-
 clean_target <- target_Africa[(!is.na(target_Africa$oc)|
                                    !is.na(target_Africa$n_tot)|
                                    !is.na(target_Africa$ph_h2o)),]
-
-dim(clean_target)
-
 
 # Check all data scources contributing to clean_target. Again it is more
 # than just AfSIS1 and AfSPDB
@@ -170,8 +167,6 @@ clean_target <-
 # In some variables there are both empty values and NA values. There seems to be
 # an inconsistence in different sources. We replace all empty values with NA
 clean_target[clean_target==""]<-NA
-# n_tot has string "NaN"
-clean_target[ clean_target == "NaN" ] <- NA
 
 
 
