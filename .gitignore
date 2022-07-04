@@ -45,3 +45,6 @@ docs/
 po/*~
 
 .DS_Store
+
+# downloaded images
+images/*.npz
